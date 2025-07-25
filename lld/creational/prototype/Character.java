@@ -15,8 +15,14 @@ public class Character implements Cloneable {
 
     @Override
     public Character clone() throws CloneNotSupportedException {
-        return (Character) super.clone(); // Shallow copy of the character object
+        return (Character) super.clone(); // Shallow copy
     }
+
+    // Getter methods
+    public String getName() { return name; }
+    public int getHealth() { return health; }
+    public int getAttackPower() { return attackPower; }
+    public int getLevel() { return level; }
 
     public void showCharacterInfo() {
         System.out.println("Character [Name=" + name + ", Health=" + health
